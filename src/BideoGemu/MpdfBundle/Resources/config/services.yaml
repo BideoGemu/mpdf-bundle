@@ -1,4 +1,4 @@
 services:
-    Sasedev\MpdfBundle\Factory\MpdfFactory:
+    BideoGemu\MpdfBundle\Factory\MpdfFactory:
         arguments: ["%kernel.cache_dir%"]
         public: true

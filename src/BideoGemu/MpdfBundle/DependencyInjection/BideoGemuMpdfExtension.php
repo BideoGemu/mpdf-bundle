@@ -1,20 +1,12 @@
 <?php
-namespace Sasedev\MpdfBundle\DependencyInjection;
+namespace BideoGemu\MpdfBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-/**
- *
- * Sasedev\MpdfBundle\DependencyInjection\SasedevMpdfExtension
- *
- *
- * @author sasedev <sinus@sasedev.net>
- *         Created on: 5 juil. 2020 @ 22:25:09
- */
-class SasedevMpdfExtension extends Extension
+class BideoGemuMpdfExtension extends Extension
 {
 
     /**

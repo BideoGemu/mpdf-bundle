@@ -1,5 +1,5 @@
 <?php
-namespace Sasedev\MpdfBundle\Factory;
+namespace BideoGemu\MpdfBundle\Factory;
 
 use Mpdf\Config\ConfigVariables;
 use Mpdf\Config\FontVariables;
@@ -7,14 +7,6 @@ use Mpdf\Mpdf;
 use Mpdf\Output\Destination;
 use Symfony\Component\HttpFoundation\Response;
 
-/**
- *
- * Sasedev\MpdfBundle\Factory\MpdfFactory
- *
- *
- * @author sasedev <sinus@sasedev.net>
- *         Created on: 1 juin 2020 @ 22:56:28
- */
 class MpdfFactory
 {
 
