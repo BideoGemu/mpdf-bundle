@@ -1,6 +1,6 @@
 {
 	"name" : "bideogemu/mpdf-bundle",
-	"description" : "Mpdf for Symfony 5",
+	"description" : "Mpdf for Symfony 5+",
 	"keywords" : [
 		"mpdf",
 		"symfony",
@@ -33,9 +33,9 @@
 	"require" : {
 		"php": ">=8.0",
 		"mpdf/mpdf": "^8.0.10",
-		"symfony/config": "^5.4",
-		"symfony/dependency-injection": "^5.4",
-		"symfony/http-kernel": "^5.4"
+		"symfony/config": "^5.4 || ^6.0 || ^7.0",
+		"symfony/dependency-injection": "^5.4 || ^6.0 || ^7.0",
+		"symfony/http-kernel": "^5.4 || ^6.0 || ^7.0"
 	},
     "prefer-stable": true
 }
