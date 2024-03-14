@@ -2,21 +2,13 @@
 namespace BideoGemu\MpdfBundle;
 
 use BideoGemu\MpdfBundle\DependencyInjection\BideoGemuMpdfExtension;
+use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class BideoGemuMpdfBundle extends Bundle
 {
-
-    /**
-     *
-     * {@inheritdoc}
-     * @see \Symfony\Component\HttpKernel\Bundle\Bundle::getContainerExtension()
-     */
-    public function getContainerExtension()
+    public function getContainerExtension(): ?ExtensionInterface
     {
-
         return new BideoGemuMpdfExtension();
-
     }
-
 }
