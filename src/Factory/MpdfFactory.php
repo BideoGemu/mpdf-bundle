@@ -169,5 +169,22 @@ class MpdfFactory
 
     }
 
+
+    /**
+     *
+     * @param Mpdf $mPdf
+     * @param string $filename
+     * @param string $path
+     * @return bool
+     * @throws MpdfException
+     */
+    public function createFileResponse(Mpdf $mPdf, string $filename,string $path): bool
+    {
+        $mPdf->Output($path.$filename, Destination::FILE);
+        if(file_exists($path.$filename)){
+            return true;
+        }
+        return false;
+    }
 }
 
