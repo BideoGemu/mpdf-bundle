@@ -1,4 +1,7 @@
 services:
     BideoGemu\MpdfBundle\Factory\MpdfFactory:
-        arguments: ["%kernel.cache_dir%"]
+        arguments:
+            $cacheDir: '%kernel.cache_dir%'
         public: true
+        autowire: true
+        autoconfigure: true

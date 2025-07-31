@@ -56,4 +56,4 @@ return $MpdfFactory->createDownloadResponse($mPdf, "file.pdf");
 ```
 
 ## Reporting an issue or a feature request
-Feel free to report any issues. If you have an idea to make it better go ahead and modify and submit pull requests.
+Please feel free to open issues or submit pull requests to improve the bundle.

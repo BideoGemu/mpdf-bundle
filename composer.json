@@ -1,41 +1,47 @@
 {
-	"name" : "bideogemu/mpdf-bundle",
-	"description" : "Mpdf for Symfony 6",
-	"keywords" : [
+	"name": "bideogemu/mpdf-bundle",
+	"description": "Mpdf for Symfony 7",
+	"keywords": [
 		"mpdf",
 		"symfony",
 		"bideogemu"
 	],
-	"type" : "symfony-bundle",
-    "homepage": "https://github.com/BideoGemu/mpdf-bundle",
-	"license" : "MIT",
-    "authors": [
-        {
-            "name": "Bideo Gemu",
-            "homepage": "https://bideogemu.com",
-            "email": "contact@bideogemu.com"
-        }
-    ],
-	"config" : {
-		"bin-dir" : "bin",
-		"component-dir" : "vendor",
-		"preferred-install" : {
-			"*" : "dist"
+	"type": "symfony-bundle",
+	"homepage": "https://github.com/BideoGemu/mpdf-bundle",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Bideo Gemu",
+			"homepage": "https://bideogemu.com",
+			"email": "contact@bideogemu.com"
+		}
+	],
+	"config": {
+		"bin-dir": "bin",
+		"component-dir": "vendor",
+		"preferred-install": {
+			"*": "dist"
 		},
-		"process-timeout" : 1200,
-		"sort-packages" : true
+		"process-timeout": 1200,
+		"sort-packages": true
 	},
-	"autoload" : {
-		"psr-4" : {
-			"BideoGemu\\MpdfBundle\\" : "src"
+	"autoload": {
+		"psr-4": {
+			"BideoGemu\\MpdfBundle\\": "src/"
 		}
 	},
-	"require" : {
-		"php": ">=8.1",
+	"require": {
+		"php": ">=8.2",
 		"mpdf/mpdf": "^8.2.1",
-		"symfony/config": "^6.4",
-		"symfony/dependency-injection": "^6.4",
-		"symfony/http-kernel": "^6.4"
+		"symfony/config": "^7.0",
+		"symfony/dependency-injection": "^7.0",
+		"symfony/http-kernel": "^7.0",
+		"symfony/framework-bundle": "^7.0"
 	},
-    "prefer-stable": true
+	"prefer-stable": true,
+	"extra": {
+		"symfony": {
+			"bundle": true
+		}
+	}
 }
